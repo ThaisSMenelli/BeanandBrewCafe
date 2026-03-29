@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bean & Brew Café Menu - Coffee, seasonal drinks, pastries and more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bean & Brew</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo-bean-brew.png" alt="Bean & Brew Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="booking.html">Events & Booking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container center">
+        <h1 class="section-title">Our Menu</h1>
+        <p>Explore our selection of coffees, seasonal drinks, and delicious pastries.</p>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Coffee Drinks</h2>
+        <div class="grid">
+            <div class="menu-item card" 
+                 data-name="Espresso" 
+                 data-description="Strong, bold, and classic Italian espresso." 
+                 data-price="$2.50" 
+                 data-vegan="Yes" 
+                 data-allergens="None">
+                <img src="images/menu/espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>£2.50</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Cappuccino" 
+                 data-description="Espresso with steamed milk and foam." 
+                 data-price="$3.50" 
+                 data-vegan="No" 
+                 data-allergens="Dairy">
+                <img src="images/menu/cappuccino.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>£3.50</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Latte" 
+                 data-description="Smooth blend of espresso and steamed milk." 
+                 data-price="$3.75" 
+                 data-vegan="No" 
+                 data-allergens="Dairy">
+                <img src="images/menu/latte.jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>£3.75</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Americano" 
+                 data-description="Espresso diluted with hot water for a milder taste." 
+                 data-price="$2.75" 
+                 data-vegan="Yes" 
+                 data-allergens="None">
+                <img src="images/menu/americano.jpg" alt="Americano">
+                <h3>Americano</h3>
+                <p>£2.75</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Seasonal Drinks</h2>
+        <div class="grid">
+            <div class="menu-item card" 
+                 data-name="Pumpkin Spice Latte" 
+                 data-description="Espresso with pumpkin flavor, spices, and steamed milk." 
+                 data-price="$4.25" 
+                 data-vegan="Yes" 
+                 data-allergens="Dairy optional">
+                <img src="images/menu/pumpkin-latte.jpg" alt="Pumpkin Spice Latte">
+                <h3>Pumpkin Spice Latte</h3>
+                <p>£4.25</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Caramel Iced Latte" 
+                 data-description="Cold espresso with milk, ice, and caramel syrup." 
+                 data-price="$4.00" 
+                 data-vegan="Yes" 
+                 data-allergens="None">
+                <img src="images/menu/caramel-iced-latte.jpg" alt="Caramel Iced Latte">
+                <h3>Caramel Iced Latte</h3>
+                <p>£4.00</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Mocha Delight" 
+                 data-description="Chocolate, espresso, milk, and whipped cream." 
+                 data-price="$4.50" 
+                 data-vegan="No" 
+                 data-allergens="Dairy">
+                <img src="images/menu/mocha-delight.jpg" alt="Mocha Delight">
+                <h3>Mocha Delight</h3>
+                <p>£4.50</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Food</h2>
+        <div class="grid">
+            <div class="menu-item card" 
+                 data-name="Croissant" 
+                 data-description="Flaky, buttery croissant fresh from the oven." 
+                 data-price="$2.50" 
+                 data-vegan="No" 
+                 data-allergens="Gluten, Dairy">
+                <img src="images/menu/croissant.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>£2.50</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Chocolate Cake Slice" 
+                 data-description="Rich chocolate cake with a creamy ganache topping." 
+                 data-price="$3.50" 
+                 data-vegan="No" 
+                 data-allergens="Gluten, Dairy, Eggs">
+                <img src="images/menu/chocolate-cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>£3.50</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Ham & Cheese Sandwich" 
+                 data-description="Classic sandwich with ham, cheese, and fresh bread." 
+                 data-price="$4.00" 
+                 data-vegan="No" 
+                 data-allergens="Gluten, Dairy">
+                <img src="images/menu/ham-sandwich.jpg" alt="Ham & Cheese Sandwich">
+                <h3>Ham & Cheese Sandwich</h3>
+                <p>£4.00</p>
+            </div>
+            <div class="menu-item card" 
+                 data-name="Vegan Wrap" 
+                 data-description="Savory wrap with vegetables." 
+                 data-price="$3.75" 
+                 data-vegan="Yes" 
+                 data-allergens="Gluten">
+                <img src="images/menu/vegan-wrap.jpg" alt="Vegan Roll">
+                <h3>Vegan Wrap</h3>
+                <p>£3.75</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container center">
+        <a href="contact.html" class="btn">Visit Us</a>
+    </section>
+
+</main>
+
+<div id="menuModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalName"></h2>
+    <p id="modalDescription"></p>
+    <p id="modalPrice"></p>
+    <p id="modalVegan"></p>
+    <p id="modalAllergens"></p>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p>Bean & Brew Café</p>
+      <p>123 High Street</p>
+    </div>
+ 
+    <div class="footer-column">
+      <p>Open Monday – Friday: 9am – 9pm</p>
+      <p>Saturday – Sunday: 10am – 6pm</p>
+    </div>
+
+    <div class="footer-column footer-social">
+      <p><a href="https://instagram.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a></p>
+      <p><a href="https://facebook.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

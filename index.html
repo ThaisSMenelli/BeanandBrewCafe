@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bean & Brew Café - Fresh coffee and cosy atmosphere">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo-bean-brew.png" alt="Bean & Brew Logo">
+        </div>
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Events & Booking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/cafe.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Welcome to Bean & Brew</h1>
+            <p>A cosy place to enjoy great coffee, relax, and spend time with friends or work in comfort.</p>
+            <p>Discover seasonal drinks, pastries, and a warm atmosphere every day.</p>
+            <a href="menu.html" class="btn">View Menu</a>
+            <a href="booking.html" class="btn btn-secondary">Book a Table</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Seasonal Drinks</h2>
+
+        <div class="drinks">
+            <div class="card">
+                <img src="images/home/caramel-iced-latte.jpg" alt="Caramel Iced Latte in a glass with ice">
+                <h3>Caramel Iced Latte</h3>
+                <p>Smooth and refreshing.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/home/vanilla-cappuccino.jpg" alt="Vanilla Cappuccino in a cup with cream on top">
+                <h3>Vanilla Cappuccino</h3>
+                <p>Warm and creamy.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/home/mocha-delight.jpg" alt="Mocha Delight in a glass with cream and chocolate sauce">
+                <h3>Mocha Delight</h3>
+                <p>Rich chocolate flavour.</p>
+            </div>
+        </div>
+
+        <div class="center" style="margin-top: 20px;">
+            <a href="menu.html" class="btn">See Full Menu</a>
+        </div>
+    </section>
+
+    <section class="container center">
+        <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p class="testimonial-text">Lovely atmosphere and amazing coffee!</p>
+                <div class="stars">★★★★★</div>
+                <p class="customer-name">- Sarah M.</p>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="testimonial-text">Perfect place to study and relax.</p>
+                <div class="stars">★★★★☆</div>
+                <p class="customer-name">- John L.</p>
+            </div>
+        </div>
+
+        <p>Follow us on Instagram @beanandbrew</p>
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p>Bean & Brew Café</p>
+      <p>123 High Street</p>
+    </div>
+ 
+    <div class="footer-column">
+      <p>Open Monday – Friday: 9am – 9pm</p>
+      <p>Saturday – Sunday: 10am – 6pm</p>
+    </div>
+
+    <div class="footer-column footer-social">
+      <p><a href="https://instagram.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a></p>
+      <p><a href="https://facebook.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
+</body>
+</html>

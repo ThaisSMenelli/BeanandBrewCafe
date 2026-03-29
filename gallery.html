@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bean & Brew Café Menu - Coffee, seasonal drinks, pastries and more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bean & Brew</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo-bean-brew.png" alt="Bean & Brew Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Events & Booking</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container center">
+        <h1 class="section-title">Gallery</h1>
+        <p>Take a look at our coffee, food, cosy atmosphere, and special moments.</p>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Coffee Drinks</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="images/gallery/espresso2.jpg" alt="Espresso">
+                <img src="images/gallery/cappuccino2.jpg" alt="Cappuccino">
+                <img src="images/gallery/latte2.jpg" alt="Latte">
+                <img src="images/gallery/americano2.jpg" alt="Americano">
+         </div>
+
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Food</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="images/gallery/croissant2.jpg" alt="Croissant">
+                <img src="images/gallery/chocolate-cake.jpg" alt="Chocolate Cake">
+                <img src="images/gallery/ham-sandwich.jpg" alt="Ham Sandwich">
+                <img src="images/gallery/vegan-wrap.jpg" alt="Vegan Wrap">
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>    
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Our Café</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="images/gallery/cafe-interior3.jpg" alt="Café Interior">
+                <img src="images/gallery/cafe-interior2.jpg" alt="Seating Area">
+                <img src="images/gallery/coffee-being-prep.jpg" alt="Coffee Being Prepared">
+                <img src="images/gallery/cafe-atmosphere.jpg" alt="Atmosphere">
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div> 
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Events & Special Moments</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+
+            <div class="carousel-track">
+                <img src="images/gallery/live-music.jpg" alt="Live Music Event">
+                <img src="images/gallery/coffee-tasting-workshop.jpg" alt="Coffee Tasting Workshop">
+                <img src="images/gallery/student-study-night.jpg" alt="Student Study Night">
+                <img src="images/gallery/seasonal-celebration.jpg" alt="Seasonal Celebration">
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p>Bean & Brew Café</p>
+      <p>123 High Street</p>
+    </div>
+ 
+    <div class="footer-column">
+      <p>Open Monday – Friday: 9am – 9pm</p>
+      <p>Saturday – Sunday: 10am – 6pm</p>
+    </div>
+
+    <div class="footer-column footer-social">
+      <p><a href="https://instagram.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a></p>
+      <p><a href="https://facebook.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a></p>
+    </div>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="images/placeholder.png" alt="Expanded image">
+</div>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>

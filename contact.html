@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bean & Brew Café Contact - Address, opening hours, map and contact form.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact - Bean & Brew</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo-bean-brew.png" alt="Bean & Brew Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Events & Booking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container center">
+        <h1 class="section-title">Contact Us</h1>
+        <p>Find our location, opening hours, or send us a message directly.</p>
+    </section>
+
+    <section class="container info-map">
+        <div class="info">
+            <h2>Address</h2>
+            <p>123 High Street<br>Rochdale, UK</p>
+
+            <h2>Opening Hours</h2>
+            <p>Monday – Friday: 9am – 9pm<br>Saturday – Sunday: 10am – 6pm</p>
+
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:info@beanandbrew.com">info@beanandbrew.com</a><br>
+               Phone: +44 1706 123456</p>
+        </div>
+
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.123456789!2d-2.155!3d53.615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb123456789%3A0xabcdef123456789!2sBean+%26+Brew+Café!5e0!3m2!1sen!2suk!4v1671234567890!5m2!1sen!2suk" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <section class="container contact-form-section">
+        <h2 class="section-title">Send us a Message</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p>Bean & Brew Café</p>
+      <p>123 High Street</p>
+    </div>
+ 
+    <div class="footer-column">
+      <p>Open Monday – Friday: 9am – 9pm</p>
+      <p>Saturday – Sunday: 10am – 6pm</p>
+    </div>
+
+    <div class="footer-column footer-social">
+      <p><a href="https://instagram.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a></p>
+      <p><a href="https://facebook.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bean & Brew Café Events & Bookings - Coffee tastings, live music, student nights, and seasonal celebrations.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Booking - Bean & Brew</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">
+            <img src="images/logo-bean-brew.png" alt="Bean & Brew Logo">
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html" class="active">Events & Booking</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container center">
+        <h1 class="section-title">Events & Bookings</h1>
+        <p>Join us for our special events or book a private workspace for your group.</p>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <img src="images/events/coffee-tasting.jpg" alt="Coffee Tasting Workshop">
+                <h3>Coffee Tasting Workshop</h3>
+                <p>Learn the art of coffee tasting and brewing with our expert baristas.</p>
+                <p><strong>Date:</strong> 25 March 2026</p>
+                <p><strong>Time:</strong> 10:00 - 16:00</p>
+            </div>
+
+            <div class="event-card">
+                <img src="images/events/live-music.jpg" alt="Live Music Night">
+                <h3>Live Music Night</h3>
+                <p>Enjoy live performances from local artists while sipping your favorite coffee.</p>
+                <p><strong>Date:</strong> 28 March 2026</p>
+                <p><strong>Time:</strong> 17:00 - 21:00</p>
+            </div>
+
+            <div class="event-card">
+                <img src="images/events/student-study.jpg" alt="Student Study Night">
+                <h3>Student Study Night</h3>
+                <p>Special quiet study evenings with complimentary snacks and drinks.</p>
+                <p><strong>Date:</strong> 30 March 2026</p>
+                <p><strong>Time:</strong> 16:00 - 21:00</p>
+            </div>
+
+            <div class="event-card">
+                <img src="images/events/easter.jpg" alt="Seasonal Celebration">
+                <h3>Seasonal Celebration</h3>
+                <p>Celebrate the Easter with themed drinks and treats.</p>
+                <p><strong>Date:</strong> 5 April 2026</p>
+                <p><strong>Time:</strong> 10:00 - 18:00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Book Your Event or Workspace</h2>
+        <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+                <label for="eventType">Event Type *</label>
+                <select id="eventType" name="eventType" required>
+                    <option value="">-- Select Event Type --</option>
+                    <option value="coffee-tasting">Coffee Tasting Workshop</option>
+                    <option value="live-music">Live Music Night</option>
+                    <option value="student-study">Student Study Night</option>
+                    <option value="seasonal-celebration">Easter Celebration</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date *</label>
+                <select id="date" name="date" required>
+                    <option value="">-- Select Date --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="time">Time *</label>
+                <select id="time" name="time" required>
+                    <option value="">-- Select Time --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message / Details *</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell us how how many guests will you be bringing?"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+        <p id="formMessage" class="form-message"></p>
+    </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <p>Bean & Brew Café</p>
+      <p>123 High Street</p>
+    </div>
+ 
+    <div class="footer-column">
+      <p>Open Monday – Friday: 9am – 9pm</p>
+      <p>Saturday – Sunday: 10am – 6pm</p>
+    </div>
+
+    <div class="footer-column footer-social">
+      <p><a href="https://instagram.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+      </a></p>
+      <p><a href="https://facebook.com/beanandbrew" target="_blank" class="social-link">
+        <i class="fab fa-facebook-f"></i>
+      </a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/booking.js"></script>
+</body>
+</html>
