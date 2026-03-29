@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventsData = {
         "coffee-tasting": [
-            { date: "2026-03-25", times: ["10am", "12am", "2pm", "4pm"] }
+            { date: "2026-04-29", times: ["10am", "12am", "2pm", "4pm"] }
         ],
         "live-music": [
-            { date: "2026-03-27", times: ["5pm", "7pm"] }
+            { date: "2026-05-01", times: ["5pm", "7pm"] }
         ],
         "student-study": [
-            { date: "2026-03-30", times: ["4pm", "6pm", "8pm"] }
+            { date: "2026-05-04", times: ["4pm", "6pm", "8pm"] }
         ],
         "seasonal-celebration": [
             { date: "2026-04-05", times: ["10am", "12pm", "2pm", "4pm"] }
