@@ -16,9 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = form.email.value.trim();
         const message = form.message.value.trim();
 
+        // ✅ NEW: email validation regex
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
         if (!name || !email || !message) {
             formMessage.style.color = "red";
             formMessage.textContent = "Please fill in all required fields.";
+            return;
+        }
+
+        // ✅ NEW: check email format
+        if (!emailPattern.test(email)) {
+            formMessage.style.color = "red";
+            formMessage.textContent = "Please enter a valid email (e.g. name@email.com)";
             return;
         }
 
