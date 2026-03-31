@@ -367,6 +367,18 @@ input, textarea {
     margin: 5px;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+}
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
