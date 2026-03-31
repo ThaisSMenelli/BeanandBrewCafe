@@ -180,6 +180,7 @@ nav a:hover {
     color: var(--dark);
     transition: 0.3s;
     cursor: pointer;
+    flex-wrap: wrap;
 }
 
 .btn:hover {
@@ -191,6 +192,7 @@ nav a:hover {
     background-color: transparent;
     border: 2px solid var(--accent);
     color: var(--accent);
+    flex-wrap: wrap
 }
 
 .btn-secondary:hover {
