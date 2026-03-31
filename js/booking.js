@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventsData = {
         "coffee-tasting": [
-            { date: "2026-04-29", times: ["10am", "12am", "2pm", "4pm"] }
+            { date: "2026-04-29", times: ["10am", "12pm", "2pm", "4pm"] }
         ],
         "live-music": [
             { date: "2026-05-01", times: ["5pm", "7pm"] }
@@ -68,27 +68,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
+    e.preventDefault();
 
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const eventType = form.eventType.value;
-        const date = form.date.value;
-        const time = form.time.value;
-        const msg = form.message.value.trim();
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const eventType = form.eventType.value;
+    const date = form.date.value;
+    const time = form.time.value;
+    const msg = form.message.value.trim();
 
-        if (!name || !email || !eventType || !date || !time || !msg) {
-            message.style.color = "red";
-            message.textContent = "Please fill in all fields.";
-            return;
-        }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-        message.style.color = "green";
-        message.textContent = `Thank you, ${name}! Your booking request for "${form.eventType.options[form.eventType.selectedIndex].text}" on ${new Date(date).toDateString()} at ${time} has been received.`;
+    if (!name || !email || !eventType || !date || !time || !msg) {
+        message.style.color = "red";
+        message.textContent = "Please fill in all fields.";
+        return;
+    }
 
-        form.reset();
-        dateSelect.innerHTML = `<option value="">-- Select Date --</option>`;
-        timeSelect.innerHTML = `<option value="">-- Select Time --</option>`;
-    });
+    if (!emailPattern.test(email)) {
+        message.style.color = "red";
+        message.textContent = "Please enter a valid email (e.g. name@email.com)";
+        return;
+    }
+
+    message.style.color = "green";
+    message.textContent = `Thank you, ${name}! Your booking request for "${form.eventType.options[form.eventType.selectedIndex].text}" on ${new Date(date).toDateString()} at ${time} has been received.`;
+
+    form.reset();
+    dateSelect.innerHTML = `<option value="">-- Select Date --</option>`;
+    timeSelect.innerHTML = `<option value="">-- Select Time --</option>`;
+});
 
 });
